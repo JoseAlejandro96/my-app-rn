@@ -15,8 +15,14 @@ import { TextInput } from 'react-native-gesture-handler';
 import GoogleSVG from '../../assets/images/google.svg';
 import FacebookSVG from '../../assets/images/facebook.svg';
 import TwitterSVG from '../../assets/images/twitter.svg';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { AuthStackParamList } from '../navigation/AppNavigator';
 
-const Login = ({ navigation }) => {
+interface LoginProps {
+  navigation: NativeStackNavigationProp<AuthStackParamList, 'Login'>;
+}
+
+const Login = ({ navigation }: LoginProps) => {
   return (
     <SafeAreaView style={{ flex: 1, justifyContent: 'center' }}>
       <View style={{ padding: 25 }}>

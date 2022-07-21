@@ -8,6 +8,12 @@ export type RootStackParamList = {
   Users: undefined;
 };
 
+export type AuthStackParamList = {
+  Onboarding: undefined;
+  Login: undefined;
+  Register: undefined;
+};
+
 const AppNavigator = () => {
   return (
     <NavigationContainer>
